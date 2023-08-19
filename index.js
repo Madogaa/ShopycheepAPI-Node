@@ -10,7 +10,7 @@ const PORT = process.env.PORT || 3000;
 app.use(bodyParser.json());
 // Habilita CORS para todas las rutas
 app.use(cors({
-  origin: ['https://sc.madoga.dev', 'http://localhost:5173'],
+  origin: 'http://localhost:5173',
   allowedHeaders: ['Authorization', 'Content-Type']
 }))
 
